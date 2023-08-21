@@ -36,19 +36,22 @@ body{
     max-width: 80vw;
 }
 .container p{
-    font-size: 40px;;
+    font-size: 1.4rem;
     font-weight: 300;
-    line-height: 4rem;
+    line-height: 2rem;
     color: var(--dark-Blue);
     margin-bottom: 2rem;
 
 }
 .container .name{
     color:var(--dark-Blue);
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.2rem;
 
 }
 .container .job{
+    font-size: 1.2rem;
+    font-weight: 300;
     color: var(--grayish-Blue);
 }
 .image{
@@ -103,8 +106,58 @@ body{
     align-items: center;
 }
 
-/* about phone 
-@media (max-width: 375px) {
+/* about phone  */
+@media screen and (max-width:768px){
+    body{
+        background-image: url(images/pattern-bg.svg),url(images/pattern-quotes.svg),url(images/pattern-curve.svg);
+        background-repeat: no-repeat;
+        background-position: 62% 18% ,45% 58%, bottom left;
+        background-size: 80%, 20%,80%;
+    }
+    .slide1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .slide2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .image img{
+        width:250px ;
+        height: 250px;
+        border-radius:10px ;
+
+    }
+    .image ,.btn{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        top: 230px;
+        right: 90px;
+        display: flex;
+    }
+    .text-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container p{
+        margin-top: 4.5rem;
+        font-size: 1.2rem;
+    }
+    .container .name{
+        font-size: 1rem;
+    }
+    .container .job{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+/* @media (max-width: 375px) {
     body{
      background-color: red;
     }
